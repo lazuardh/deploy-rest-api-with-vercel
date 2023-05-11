@@ -9,7 +9,9 @@
  });
 
  app.get("/users", (res, req)=> {
-   return res.send("successfully");
+   return  res.json({
+      message: 'response successfully'
+   });
  });
 
  app.listen(8000, ()=> {

@@ -1,21 +1,14 @@
 {
-  "name": "backend_express_with_vercel",
-  "version": "1.0.0",
-  "description": "deploy project pemilu dengan menggunakan express",
-  "main": "index.js",
+  "name": "backend-express-with-vercel",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node ./bin/www"
   },
-  "keywords": [
-    "express-js",
-    "vercel"
-  ],
-  "author": "habbyan lazuard",
-  "license": "ISC",
   "dependencies": {
-    "env": "^0.0.2",
-    "express": "^4.18.2",
-    "mysql2": "^3.3.0",
-    "nodemon": "^2.0.22"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
   }
 }
