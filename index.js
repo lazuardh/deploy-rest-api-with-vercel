@@ -1,3 +1,4 @@
+ require("./bin/www");
  const express = require('express');
  const app = express();
 
