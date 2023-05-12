@@ -9,6 +9,16 @@
         {
             "src": "/(.*)",
             "dest": "/"
+        }, 
+        {
+            "src": "/auth/register",
+            "method": "POST",
+            "dest": "/controllers/authController.js"
+        },
+        {
+            "src": "/auth/register",
+            "method": "POST",
+            "dest": "/models/user.js"
         }
     ]
 }
