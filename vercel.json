@@ -5,20 +5,20 @@
             "use": "@vercel/node"
         }
     ],
+    "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "lazuardh21",
+        "MYSQL_DATABASE": "mysqlwithexpress"
+      },
     "routes": [
         {
             "src": "/(.*)",
             "dest": "/"
-        }, 
-        {
-            "src": "/auth/register",
-            "method": "POST",
-            "dest": "/controllers/authController.js"
         },
         {
-            "src": "/auth/register",
-            "method": "POST",
-            "dest": "/models/user.js"
+            "src": "/register",
+            "dest": "/register.js"
         }
     ]
 }
