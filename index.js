@@ -15,6 +15,6 @@
 
  app.use("/users", userRoutes);
 
- app.listen(config.PORT, ()=> {
-    console.log('proccess running at port 8000 ');
+ app.listen(process.env.PORT, ()=> {
+    console.log('proccess running at port successfull')
  });
