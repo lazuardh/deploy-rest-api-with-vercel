@@ -4,6 +4,7 @@
  const app = express();
 
  var userRoutes = require('./routes/users');
+ var authRoutes = require('./routes/authRoutes');
 
  app.get("/", (req, res)=> {
     return res.json({
@@ -12,6 +13,8 @@
     });
  });
 
+
+ app.use("/auth", userRoutes);
  app.use("/users", userRoutes);
 
  app.listen(8000, ()=> {
