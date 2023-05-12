@@ -1,6 +1,10 @@
  require("./bin/www");
+ require('dotenv').config();
+ const { config } = require("dotenv");
  const express = require('express');
  const app = express();
+
+ var userRoutes = require('./routes/users');
 
  app.get("/", (req, res)=> {
     return res.json({
@@ -9,12 +13,8 @@
     });
  });
 
- app.get("/users", (res, req)=> {
-   return  res.json({
-      message: 'response successfully'
-   });
- });
+ app.use("/users", userRoutes);
 
- app.listen(8000, ()=> {
+ app.listen(config.PORT, ()=> {
     console.log('proccess running at port 8000 ');
  });
